@@ -15,7 +15,7 @@ const Main = () => {
           <div className="details-ctn">
             <h1 className="text-white">Moses Enyinnaya</h1>
             <p className="description">
-              I'm a passionate <span className="job-title py-1">Software Developer</span>
+              I'm a passionate <span className="job-title py-1">Software Developer</span> from Nigeria
             </p>
             <div className="w-50 mt-4">
               <span className="mr-3 nav-item py-1 active">Home</span>
@@ -25,18 +25,26 @@ const Main = () => {
               <span className="mr-3 nav-item py-1">Contact</span>
             </div>
             <div className="w-25 icons-ctn d-flex align-items-center justify-content-between mt-5">
-              <span className="icon p-2 mr-2">
-                <GitHub size={'18'} color={'#fff'} fill={'#fff'} />
-              </span>
-              <span className="icon p-2 mr-2">
-                <Linkedin size={'18'} color={'#fff'} fill={'#fff'} />
-              </span>
-              <span className="icon p-2 mr-2">
-                <Twitter size={'18'} color={'#fff'} fill={'#fff'} />
-              </span>
-              <span className="icon p-2 mr-2">
-                <Facebook size={'18'} color={'#fff'} fill={'#fff'} />
-              </span>
+              <a href="https://github.com/mosco98">
+                <span className="icon p-2 mr-3">
+                  <GitHub size={'18'} color={'#fff'} fill={'#fff'} />
+                </span>
+              </a>
+              <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197">
+                <span className="icon p-2 mr-3">
+                  <Linkedin size={'18'} color={'#fff'} fill={'#fff'} />
+                </span>
+              </a>
+              <a href="https://twitter.com/_moscode">
+                <span className="icon p-2 mr-3">
+                  <Twitter size={'18'} color={'#fff'} fill={'#fff'} />
+                </span>
+              </a>
+              {/* <a href="">
+                <span className="icon p-2 mr-2">
+                  <Facebook size={'18'} color={'#fff'} fill={'#fff'} />
+                </span>
+              </a> */}
             </div>
           </div>
         </div>
