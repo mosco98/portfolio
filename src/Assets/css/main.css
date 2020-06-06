@@ -212,6 +212,25 @@ html {
 .icon:hover {
   opacity: 0.5;
 }
+
+.icon-contact {
+  width: 6rem;
+  height: 6rem;
+  background: rgba(225, 225, 225, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.icon-contact:hover {
+  opacity: 0.5;
+}
+
 .icons-ctn {
   display: flex;
   align-items: center;
@@ -335,6 +354,12 @@ html {
   .icon {
     margin: 0 7px;
   }
+
+  .icon-contact {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+
   .footer {
     display: flex;
     align-items: center;

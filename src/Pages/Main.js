@@ -53,7 +53,7 @@ const Main = () => {
                   <Twitter size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
-              <a href="https://twitter.com/_moscode">
+              <a href="mailto:enyinnayamoses60@gmail.com">
                 <span className="icon p-2">
                   <Mail size={'18'} color={'#fff'} />
                 </span>

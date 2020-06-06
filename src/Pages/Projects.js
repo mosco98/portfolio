@@ -10,6 +10,7 @@ import Works from '../Utils/Works'
 const myProjects = Works()
 const Projects = () => {
   const [open, setOpen] = useState(false)
+
   return (
     <div className="animated fadeIn">
       <Navbar setOpen={setOpen} open={open} />
