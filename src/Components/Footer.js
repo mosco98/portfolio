@@ -4,8 +4,8 @@ const name = 'mos{code}'
 
 const Footer = () => {
   return (
-    <div className="footer p-2 mr-3">
-      <p className="p-1 rounded">
+    <div className="footer p-1">
+      <p className="rounded m-0">
         Designed by <span className="name">{name}</span>
       </p>
     </div>

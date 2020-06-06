@@ -11,9 +11,9 @@ const myProjects = Works()
 const Projects = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div>
+    <div className="animated fadeIn">
       <Navbar setOpen={setOpen} open={open} />
-      {open && <SideDrawer />}
+      {open && <SideDrawer setOpen={setOpen} />}
       <section className="container projects-ctn p-5" style={{ marginTop: '7rem', marginBottom: '4rem' }}>
         <h2 className="text-white">My works</h2>
         <div className="row mt-3">

@@ -10,7 +10,7 @@ const Contact = () => {
   return (
     <div>
       <Navbar setOpen={setOpen} open={open} />
-      {open && <SideDrawer />}
+      {open && <SideDrawer setOpen={setOpen} />}
       <img className="img-fluid smile" src={smile} alt="face" />
       <Footer />
     </div>

@@ -17,18 +17,18 @@ const Card = ({ project }) => {
         onMouseEnter={() => setShowOverlay(true)}
         onMouseLeave={() => setShowOverlay(false)}>
         {showOverlay && (
-          <div className="w-100 h-100 overlay d-flex flex-column align-items-center justify-content-center">
+          <div className="w-100 h-100 overlay d-flex flex-column align-items-center justify-content-center animated-faster fadeIn">
             <h4 className="text-white">{project.title}</h4>
             <small className="w-75 text-center project-description">{project.description}</small>
-            <div className="w-50 icons-ctn d-flex align-items-center justify-content-around mt-2">
-              <a href="https://github.com/mosco98" title="Github repo">
+            <div className="w-25 icons-ctn d-flex align-items-center justify-content-around mt-2">
+              <a className="mx-1" href={project.repo} title="Github repo">
                 <span className="p-2">
-                  <GitHub size={'20'} color={'#fff'} fill={'#fff'} />
+                  <GitHub size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
-              <a href="https://twitter.com/_moscode" title="Website">
+              <a className="mx-1" href={project.url} title="Website">
                 <span className="p-2">
-                  <Link size={'20'} color={'#fff'} />
+                  <Link size={'18'} color={'#fff'} />
                 </span>
               </a>
             </div>

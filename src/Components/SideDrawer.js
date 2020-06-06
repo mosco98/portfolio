@@ -1,4 +1,5 @@
 import React from 'react'
+import { X } from 'react-feather'
 import { Link } from 'react-router-dom'
 
 import Footer from './Footer'
@@ -6,7 +7,10 @@ import Footer from './Footer'
 const SideDrawer = ({ setOpen }) => {
   const path = window.location.pathname
   return (
-    <div className="side-drawer">
+    <div className="side-drawer animated-faster fadeIn">
+      <button className="menu-btn-x mt-4 mr-4" onClick={() => setOpen(false)}>
+        <X size={'35'} color={'#fff'} />
+      </button>
       <div className="side-drawer-items">
         <Link to="/">
           <span className={path === '/' ? 'nav-item py-1 active' : 'nav-item py-1'}>Home</span>

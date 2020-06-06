@@ -8,9 +8,9 @@ import SideDrawer from '../Components/SideDrawer'
 const About = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div className="">
+    <div className="animated fadeIn">
       <Navbar setOpen={setOpen} open={open} />
-      {open && <SideDrawer />}
+      {open && <SideDrawer setOpen={setOpen} />}
       <div className="container-fluid section p-0" style={{ marginTop: '7rem' }}>
         <div className="container-fluid w-50 about-text-ctn text-center h-100">
           <h1 className="hello">

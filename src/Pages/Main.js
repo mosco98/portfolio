@@ -1,23 +1,28 @@
-import React from 'react'
-import { GitHub, Linkedin, Twitter } from 'react-feather'
+import React, { useState } from 'react'
+import { GitHub, Linkedin, Mail, Twitter } from 'react-feather'
 import { Link } from 'react-router-dom'
 
-import hoodie from '../Assets/img/hoodie.png'
+import hoodieFull from '../Assets/img/hoodie-full.png'
 import Footer from '../Components/Footer'
+import Navbar from '../Components/Navbar'
+import SideDrawer from '../Components/SideDrawer'
 
 const Main = () => {
+  const [open, setOpen] = useState(false)
   return (
-    <div className="home">
+    <div className="home animated-faster fadeIn">
+      <Navbar setOpen={setOpen} open={open} home={true} />
+      {open && <SideDrawer setOpen={setOpen} />}
       <div />
       <div className="w-100 d-flex align-items-center justify-content-end h-75">
-        <img className="img-fluid bgImg p-0" src={hoodie} alt="header" />
+        <img className="img-fluid bgImg p-0" src={hoodieFull} alt="header" />
         <div className="header-ctn">
-          <div className="details-ctn">
-            <h1 className="text-white">Moses Enyinnaya</h1>
+          <div className="details-ctn animated slideInRight">
+            <h1 className="text-white name-home">Moses Enyinnaya</h1>
             <p className="description">
               I'm a passionate <span className="job-title">Software Developer</span> from Nigeria
             </p>
-            <div className="w-50 mt-4">
+            <div className="w-50 mt-4 home-nav">
               <Link to="/">
                 <span className="mr-3 nav-item py-1 active">Home</span>
               </Link>
@@ -28,27 +33,29 @@ const Main = () => {
               <Link to="/projects">
                 <span className="mr-3 nav-item py-1">Projects</span>
               </Link>
-              {/* <Link to="/contact">
-                <span className="mr-3 nav-item py-1">Contact</span>
-              </Link> */}
               <Link to="/blog">
                 <span className="mr-3 nav-item py-1">Blog</span>
               </Link>
             </div>
-            <div className="w-25 icons-ctn d-flex align-items-center justify-content-between mt-5">
+            <div className="icons-ctn">
               <a href="https://github.com/mosco98">
-                <span className="icon p-2 mr-3">
+                <span className="icon p-2">
                   <GitHub size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
               <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197">
-                <span className="icon p-2 mr-3">
+                <span className="icon p-2">
                   <Linkedin size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
               <a href="https://twitter.com/_moscode">
-                <span className="icon p-2 mr-3">
+                <span className="icon p-2">
                   <Twitter size={'18'} color={'#fff'} fill={'#fff'} />
+                </span>
+              </a>
+              <a href="https://twitter.com/_moscode">
+                <span className="icon p-2">
+                  <Mail size={'18'} color={'#fff'} />
                 </span>
               </a>
               {/* <a href="">
