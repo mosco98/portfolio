@@ -12,7 +12,7 @@ const Projects = () => {
   return (
     <div>
       <Navbar />
-      <section className="container projects-ctn mb-6 p-5" style={{ marginTop: '6rem' }}>
+      <section className="container projects-ctn p-5" style={{ marginTop: '6rem' }}>
         <h2 className="text-white">My works</h2>
         <div className="row">
           {myProjects.map((project) => (

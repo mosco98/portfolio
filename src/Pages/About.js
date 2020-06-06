@@ -8,7 +8,7 @@ const About = () => {
   return (
     <div className="">
       <Navbar />
-      <div className="container-fluid section p-0">
+      <div className="container-fluid section p-0" style={{ marginTop: '7rem' }}>
         <div className="container-fluid w-50 about-text-ctn text-center h-100">
           <h1 className="hello">
             Hello<span style={{ color: '#1de9b6' }}>!</span>

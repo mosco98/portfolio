@@ -1,4 +1,5 @@
 import React from 'react'
+import { Menu, X } from 'react-feather'
 import { Link } from 'react-router-dom'
 
 import SideDrawer from './SideDrawer'
@@ -6,7 +7,7 @@ import SideDrawer from './SideDrawer'
 const Navbar = (props) => {
   const path = window.location.pathname
   return (
-    <div className="nav p-4 d-flex align-items-center justify-content-end nav-bar">
+    <div className="p-4 d-flex align-items-center justify-content-end nav-bar">
       {/* <SideDrawer /> */}
       <div className="nav-bar-items">
         <Link to="/">
@@ -27,9 +28,11 @@ const Navbar = (props) => {
         </Link>
       </div>
       <button className="menu-btn">
+        {/* <div className="line" />
         <div className="line" />
-        <div className="line" />
-        <div className="line" />
+        <div className="line" /> */}
+        <Menu size={'35'} color={'#fff'} />
+        {/* <X size={'35'} color={'#fff'} /> */}
       </button>
     </div>
   )

@@ -8,7 +8,7 @@ body {
   width: 100%;
   z-index: 10000;
   background: black;
-  height: 4rem;
+  height: 6rem;
 }
 
 .nav-bar-items {
@@ -78,13 +78,19 @@ body {
 }
 
 .projects-ctn {
-  background: rgba(225, 225, 225, 0.1);
+  background: rgba(225, 225, 225, 0.08);
 }
 
 .section {
   /* position: absolute; */
-  margin-top: 6rem;
+  /* margin-top: 6rem; */
   height: 96vh;
+}
+
+.crd {
+  background: black;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 
 .home {
@@ -168,13 +174,14 @@ body {
   bottom: 0;
   right: 0;
   font-size: 0.7rem;
-  color: #fff;
-  opacity: 1;
-  z-index: -5;
+  color: white;
+  /* opacity: 0.8; */
+  z-index: -1;
 }
 
 .footer p {
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 .name {
@@ -224,6 +231,7 @@ body {
   }
 
   .about-text-ctn {
+    z-index: 100;
     margin-bottom: 12rem;
   }
 
@@ -238,7 +246,8 @@ body {
     display: none;
   }
   .footer {
-    z-index: 1;
+    /* z-index: 1; */
+    /* opacity: 0.9; */
   }
 }
 
