@@ -9,8 +9,8 @@ const Main = () => {
   return (
     <div className="home">
       <div />
-      <div className="w-100 d-flex align-items-center justify-content-between h-75">
-        <img className="img-fluid bgImg" src={hoodie} alt="header" />
+      <div className="w-100 d-flex align-items-center justify-content-end h-75">
+        <img className="img-fluid bgImg p-0" src={hoodie} alt="header" />
         <div className="header-ctn">
           <div className="details-ctn">
             <h1 className="text-white">Moses Enyinnaya</h1>
@@ -28,9 +28,9 @@ const Main = () => {
               <Link to="/projects">
                 <span className="mr-3 nav-item py-1">Projects</span>
               </Link>
-              <Link to="/contact">
+              {/* <Link to="/contact">
                 <span className="mr-3 nav-item py-1">Contact</span>
-              </Link>
+              </Link> */}
               <Link to="/blog">
                 <span className="mr-3 nav-item py-1">Blog</span>
               </Link>

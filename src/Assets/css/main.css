@@ -133,12 +133,15 @@ body {
 
 .header-ctn {
   height: 50%;
-  width: 100%;
+  width: 50%;
   margin-left: -50px;
-  padding: 1rem;
+  /* padding: 1rem; */
 }
 
 .bgImg {
+  position: fixed;
+  bottom: 0;
+  left: 0;
   width: 500px;
   height: 500px;
   opacity: 0.67;
@@ -202,12 +205,12 @@ body {
 
 .description {
   color: white;
-  font-size: 1.3rem;
+  font-size: 1rem;
   opacity: 0.8;
 }
 .job-title {
   color: #ffffff;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
   border-bottom: 1.3px solid #1de9b6;
 }
@@ -261,10 +264,10 @@ body {
     /* height: 50%; */
   }
   .description {
-    font-size: 1.3rem;
+    font-size: 1rem;
   }
   .job-title {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
   .bgImg {
     display: none;
@@ -301,6 +304,10 @@ body {
   .about-text-ctn {
     margin-bottom: 15rem;
   }
+  /* .header-ctn {
+    width: 100%;
+    padding: 4rem;
+  } */
   .menu-btn {
     display: flex;
   }
