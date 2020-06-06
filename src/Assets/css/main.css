@@ -69,7 +69,6 @@ body {
   min-width: 360px;
   color: #fff;
   z-index: 100;
-  margin-bottom: 5rem;
 }
 
 .about-text-ctn p {
@@ -224,6 +223,10 @@ body {
     opacity: 0.4;
   }
 
+  .about-text-ctn {
+    margin-bottom: 12rem;
+  }
+
   .about-text-ctn p {
     text-align: center;
   }
@@ -233,5 +236,14 @@ body {
   }
   .nav-bar-items {
     display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about-text-ctn {
+    margin-bottom: 15rem;
+  }
+  .menu-btn {
+    display: flex;
   }
 }
