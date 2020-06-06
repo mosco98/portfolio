@@ -237,6 +237,9 @@ body {
   .nav-bar-items {
     display: none;
   }
+  .footer {
+    z-index: 1;
+  }
 }
 
 @media screen and (max-width: 550px) {
