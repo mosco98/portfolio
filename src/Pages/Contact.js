@@ -8,7 +8,7 @@ import SideDrawer from '../Components/SideDrawer'
 const Contact = () => {
   const [open, setOpen] = useState(false)
   return (
-    <div>
+    <div className="animated-faster fadeIn">
       <Navbar setOpen={setOpen} open={open} />
       {open && <SideDrawer setOpen={setOpen} />}
       <img className="img-fluid smile" src={smile} alt="face" />
