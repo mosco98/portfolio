@@ -2,6 +2,92 @@ body {
   background: black;
 }
 
+.nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
+  background: black;
+  height: 4rem;
+}
+
+.nav-bar-items {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.menu-btn {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 2.8rem;
+  height: 2.2rem;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+.menu-btn:hover,
+.menu-btn:focus,
+.menu-btn:active {
+  outline: none;
+  opacity: 0.8;
+}
+
+.line {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+.side-drawer {
+  position: fixed;
+  margin-top: 100%;
+  background: red;
+  width: 70%;
+  height: 100%;
+  right: 0;
+  z-index: 10000;
+}
+
+.smile {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  opacity: 0.6;
+  z-index: -5;
+}
+
+.hello {
+  font-size: 5.5rem;
+  color: #fff;
+}
+
+.about-text-ctn {
+  min-width: 360px;
+  color: #fff;
+  z-index: 100;
+  margin-bottom: 5rem;
+}
+
+.about-text-ctn p {
+  font-size: 1.05rem;
+  opacity: 0.85;
+  text-align: left;
+}
+
+.projects-ctn {
+  background: rgba(225, 225, 225, 0.1);
+}
+
+.section {
+  /* position: absolute; */
+  margin-top: 6rem;
+  height: 96vh;
+}
+
 .home {
   position: fixed;
   height: 100vh;
@@ -37,6 +123,10 @@ body {
   opacity: 0.8;
 }
 
+.overlay {
+  /* height: 70%; */
+}
+
 .active {
   opacity: 1;
   border-bottom: 1px solid #fff;
@@ -65,12 +155,12 @@ body {
 
 .description {
   color: white;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   opacity: 0.8;
 }
 .job-title {
-  color: white;
-  font-size: 1.6rem;
+  color: #ffffff;
+  font-size: 1.5rem;
   font-weight: bolder;
   border-bottom: 1.3px solid #1de9b6;
 }
@@ -79,23 +169,29 @@ body {
   position: fixed;
   bottom: 0;
   right: 0;
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #fff;
+  opacity: 1;
+  z-index: -5;
+}
+
+.footer p {
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
 }
 
 .name {
-  font-size: 1rem;
+  font-size: 0.9rem;
   opacity: 0.7;
   margin-left: 0.2rem;
   color: #1de9b6;
   font-weight: bolder;
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 850px) {
   .home {
     background: url('../img/hoodie.png');
     background-repeat: no-repeat;
-    background-position: center center;
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -111,7 +207,7 @@ body {
     justify-content: center;
   }
   .details-ctn {
-    /* margin-left: 1rem; */
+    margin-left: 1rem;
     margin-top: 1rem;
     /* height: 50%; */
   }
@@ -122,6 +218,20 @@ body {
     font-size: 1.4rem;
   }
   .bgImg {
+    display: none;
+  }
+  .smile {
+    opacity: 0.4;
+  }
+
+  .about-text-ctn p {
+    text-align: center;
+  }
+
+  .menu-btn {
+    display: flex;
+  }
+  .nav-bar-items {
     display: none;
   }
 }
