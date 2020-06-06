@@ -1,13 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import smile from '../Assets/img/smile.png'
 import Footer from '../Components/Footer'
 import Navbar from '../Components/Navbar'
+import SideDrawer from '../Components/SideDrawer'
 
 const About = () => {
+  const [open, setOpen] = useState(false)
   return (
     <div className="">
-      <Navbar />
+      <Navbar setOpen={setOpen} open={open} />
+      {open && <SideDrawer />}
       <div className="container-fluid section p-0" style={{ marginTop: '7rem' }}>
         <div className="container-fluid w-50 about-text-ctn text-center h-100">
           <h1 className="hello">

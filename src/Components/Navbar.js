@@ -2,9 +2,7 @@ import React from 'react'
 import { Menu, X } from 'react-feather'
 import { Link } from 'react-router-dom'
 
-import SideDrawer from './SideDrawer'
-
-const Navbar = (props) => {
+const Navbar = ({ setOpen, open }) => {
   const path = window.location.pathname
   return (
     <div className="p-4 d-flex align-items-center justify-content-end nav-bar">
@@ -27,13 +25,15 @@ const Navbar = (props) => {
           <span className={path === '/blog' ? 'mr-3 nav-item py-1 active' : 'mr-3 nav-item py-1'}>Blog</span>
         </Link>
       </div>
-      <button className="menu-btn">
-        {/* <div className="line" />
-        <div className="line" />
-        <div className="line" /> */}
-        <Menu size={'35'} color={'#fff'} />
-        {/* <X size={'35'} color={'#fff'} /> */}
-      </button>
+      {open ? (
+        <button className="menu-btn" onClick={() => setOpen(false)}>
+          <X size={'35'} color={'#fff'} />
+        </button>
+      ) : (
+        <button className="menu-btn" onClick={() => setOpen(true)}>
+          <Menu size={'35'} color={'#fff'} />
+        </button>
+      )}
     </div>
   )
 }

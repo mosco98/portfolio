@@ -8,7 +8,7 @@ body {
   width: 100%;
   z-index: 10000;
   background: black;
-  height: 6rem;
+  height: 8rem;
 }
 
 .nav-bar-items {
@@ -43,13 +43,29 @@ body {
   background: #fff;
 }
 .side-drawer {
+  display: none;
   position: fixed;
-  margin-top: 100%;
-  background: red;
-  width: 70%;
+  background: black;
+  width: 100%;
   height: 100%;
   right: 0;
-  z-index: 10000;
+  z-index: 100;
+  /* margin-top: -20px; */
+}
+
+.side-drawer-items {
+  background: black;
+  margin-top: 1rem;
+  width: 100%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-drawer-items a {
+  padding: 10px;
 }
 
 .smile {
@@ -68,7 +84,7 @@ body {
 .about-text-ctn {
   min-width: 360px;
   color: #fff;
-  z-index: 100;
+  z-index: 70;
 }
 
 .about-text-ctn p {
@@ -88,9 +104,14 @@ body {
 }
 
 .crd {
-  background: black;
+  background-color: white;
   box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   cursor: pointer;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
 }
 
 .home {
@@ -101,6 +122,13 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  /* background: rgb(0, 0, 0);
+  background: linear-gradient(45deg, rgba(0, 0, 0, 1) 42%, rgba(77, 77, 77, 1) 100%); */
+}
+
+.project-description {
+  color: #fff;
+  opacity: 0.7;
 }
 
 .header-ctn {
@@ -119,7 +147,7 @@ body {
 .nav-item {
   color: #fff;
   cursor: pointer;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   opacity: 0.5;
   transition: all 0.2s ease-in-out;
 }
@@ -128,7 +156,22 @@ body {
 }
 
 .overlay {
-  /* height: 70%; */
+  background: rgba(0, 0, 0, 0.8);
+}
+.overlay a {
+  opacity: 0.8;
+  transition: all 0.2s ease-in-out;
+}
+.overlay span {
+  background: rgba(225, 225, 225, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.overlay a:hover {
+  opacity: 0.6;
 }
 
 .active {
@@ -227,7 +270,7 @@ body {
     display: none;
   }
   .smile {
-    opacity: 0.6;
+    opacity: 0.65;
   }
 
   .about-text-ctn {
@@ -249,6 +292,9 @@ body {
     /* z-index: 1; */
     /* opacity: 0.9; */
   }
+  .side-drawer {
+    display: block;
+  }
 }
 
 @media screen and (max-width: 550px) {
@@ -257,5 +303,8 @@ body {
   }
   .menu-btn {
     display: flex;
+  }
+  .side-drawer {
+    display: block;
   }
 }

@@ -1,3 +1,5 @@
+import timerApp from '../Assets/img/timer-app.png'
+
 const Works = () => {
   return [
     {
@@ -5,42 +7,48 @@ const Works = () => {
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: timerApp,
+      repo: ''
     },
     {
       id: 2,
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: '',
+      repo: ''
     },
     {
       id: 3,
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: '',
+      repo: ''
     },
     {
       id: 4,
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: '',
+      repo: ''
     },
     {
       id: 5,
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: '',
+      repo: ''
     },
     {
       id: 6,
       title: 'Devscreen',
       description: 'An extension that updates users(developers) with articles from top Dev blogs',
       url: 'http://devscreen.online',
-      image: ''
+      image: '',
+      repo: ''
     }
   ]
 }
