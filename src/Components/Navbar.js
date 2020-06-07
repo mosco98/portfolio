@@ -15,7 +15,11 @@ const Navbar = ({ setOpen, open, home }) => {
           <Link to="/about">
             <span className={path === '/about' ? 'mr-3 nav-item py-1 active' : 'mr-3 nav-item py-1'}>About</span>
           </Link>
-          <span className="mr-3 nav-item py-1">Resume</span>
+          <a
+            href="https://drive.google.com/file/d/1Btej8CUjWJvBtWq1-5L7F4P6Xa-L9kLz/view?usp=sharing"
+            className="mr-3 nav-item py-1">
+            Resume
+          </a>
           <Link to="/projects">
             <span className={path === '/projects' ? 'mr-3 nav-item py-1 active' : 'mr-3 nav-item py-1'}>Projects</span>
           </Link>
@@ -28,7 +32,7 @@ const Navbar = ({ setOpen, open, home }) => {
         </div>
       )}
       {open ? (
-        <button className="menu-btn" onClick={() => setOpen(false)}>
+        <button className="menu-btn animated-faster fadeIn" onClick={() => setOpen(false)}>
           <X size={'35'} color={'#fff'} />
         </button>
       ) : (

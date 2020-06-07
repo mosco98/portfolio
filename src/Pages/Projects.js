@@ -18,7 +18,7 @@ const Projects = () => {
       <section
         className="container projects-ctn p-5 animated fadeInUp"
         style={{ marginTop: '7rem', marginBottom: '4rem' }}>
-        <h2 className="text-white">My works</h2>
+        <h2 className="text-white">MY WORKS</h2>
         <div className="row mt-3">
           {myProjects.map((project) => (
             <Card key={project.id} project={project} />

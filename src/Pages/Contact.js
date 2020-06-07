@@ -13,7 +13,7 @@ const Contact = () => {
       <Navbar setOpen={setOpen} open={open} />
       {open && <SideDrawer setOpen={setOpen} />}
       <div className="container" style={{ marginTop: '7rem', height: '50vh' }}>
-        <h2 className="text-white ml-5">Contact me</h2>
+        <h2 className="text-white p-2">CONTACT ME</h2>
         <div className="container h-50 d-flex align-items-center justify-content-center mt-6">
           <a href="https://github.com/mosco98">
             <span className="icon-contact p-3">

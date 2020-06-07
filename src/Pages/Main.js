@@ -29,7 +29,11 @@ const Main = () => {
               <Link to="/about">
                 <span className="mr-3 nav-item py-1">About</span>
               </Link>
-              <span className="mr-3 nav-item py-1">Resume</span>
+              <a
+                href="https://drive.google.com/file/d/1Btej8CUjWJvBtWq1-5L7F4P6Xa-L9kLz/view?usp=sharing"
+                className="mr-3 nav-item py-1">
+                Resume
+              </a>
               <Link to="/projects">
                 <span className="mr-3 nav-item py-1">Projects</span>
               </Link>
