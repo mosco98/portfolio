@@ -27,7 +27,7 @@ const Works = () => {
     {
       id: 2,
       title: 'Devscreen',
-      description: 'A chrome extension that updates users(developers) with articles from top Dev blogs',
+      description: 'A chrome extension that updates users(developers) daily with articles from top Dev blogs',
       url: 'http://devscreen.online',
       image: devscreen,
       repo: 'https://github.com/mosco98/devscreen-react'
@@ -45,7 +45,7 @@ const Works = () => {
       id: 4,
       title: 'Text To Speech App',
       description:
-        'A text to speech that converts texts to speech and lets the user download the converted texts as audio and can also create an account to create to save converted audio files online ',
+        'A text to speech app that converts texts to speech and lets the user download the converted texts as audio and can also create an account to save converted audio files online ',
       url: 'https://moscode-tts-app.netlify.app/',
       image: ttsApp,
       repo: 'https://github.com/mosco98/Text-to-speech-App'
