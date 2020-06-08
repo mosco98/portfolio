@@ -9,14 +9,6 @@ import weJapa from '../Assets/img/weJapa.png'
 const Works = () => {
   return [
     {
-      id: 10,
-      title: 'Portfolio site',
-      description: 'My portfolio website built with React',
-      url: '',
-      image: portfolio,
-      repo: 'https://github.com/mosco98/portfolio'
-    },
-    {
       id: 1,
       title: 'Countdown Timer App',
       description: 'A simple countdown timer app built with React',
@@ -65,6 +57,14 @@ const Works = () => {
       url: 'https://moscode-tic-tac-toe.netlify.app/',
       image: ticTacToe,
       repo: 'https://github.com/mosco98/TicTacToe'
+    },
+    {
+      id: 10,
+      title: 'Portfolio site',
+      description: 'My portfolio website built with React',
+      url: '',
+      image: portfolio,
+      repo: 'https://github.com/mosco98/portfolio'
     }
   ]
 }

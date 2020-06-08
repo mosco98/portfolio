@@ -14,6 +14,7 @@ const Card = ({ project }) => {
       <div
         className="h-100 w-100 crd"
         style={cardStyle}
+        onClick={() => setShowOverlay(true)}
         onMouseEnter={() => setShowOverlay(true)}
         onMouseLeave={() => setShowOverlay(false)}>
         {showOverlay && (
