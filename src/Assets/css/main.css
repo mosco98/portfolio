@@ -1,5 +1,7 @@
 body {
   background: url('../img/chalkboard.jpg');
+  /* background-position: fixed; */
+  background-attachment: fixed;
 }
 html {
   scroll-behavior: smooth;
@@ -282,6 +284,12 @@ html {
 }
 
 @media screen and (max-width: 850px) {
+  body {
+    background: black;
+  }
+  .nav-bar {
+    background: black;
+  }
   .home {
     background: url('../img/hoodie.png');
     background-repeat: no-repeat;
