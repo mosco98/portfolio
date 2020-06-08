@@ -22,9 +22,9 @@ const About = () => {
             talented IT professionals in creating websites, web apps to the very highest standards.
           </p>
           <p>
-            I work with a small startup, Pandageeks - a company that is aimed at building standard apps that solve real
-            life problems. I am Freelancing (a few gigs) on the side and also working on building a brand that would be
-            aimed at identifying real life problems and solving them with code.
+            I work with startup, Pandageeks - a company that is aimed at building standard apps that solve real life
+            problems. I am also Freelancing (a few gigs) on the side and working on building a brand that would be aimed
+            at identifying real life problems and solving them with code.
           </p>
           <p>I am a great team player as I love sharing my ideas with the group and learning new stuff.</p>
           <div className="container p-3 d-flex flex-column">

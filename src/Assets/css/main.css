@@ -210,7 +210,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-right: 10px;
+  margin: 0 5px;
   opacity: 0.8;
   cursor: pointer;
   transition: all 0.1s ease-in-out;
@@ -329,7 +329,7 @@ html {
 
   .about-text-ctn {
     z-index: 100;
-    margin-bottom: 12rem;
+    margin-bottom: 15rem;
   }
 
   .about-text-ctn p {
