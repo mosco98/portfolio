@@ -30,7 +30,9 @@ const Main = () => {
                 <span className="mr-3 nav-item py-1">About</span>
               </Link>
               <a
-                href="https://drive.google.com/file/d/1Btej8CUjWJvBtWq1-5L7F4P6Xa-L9kLz/view?usp=sharing"
+                href="https://drive.google.com/file/d/11M1SzqNoGVUbwA6PYXd9Pzi-zoIeYdF4/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mr-3 nav-item py-1">
                 Resume
               </a>
@@ -42,22 +44,22 @@ const Main = () => {
               </Link>
             </div>
             <div className="icons-ctn">
-              <a href="https://github.com/mosco98">
+              <a href="https://github.com/mosco98" title="Github">
                 <span className="icon p-2">
                   <GitHub size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
-              <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197">
+              <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197" title="LinkedIn">
                 <span className="icon p-2">
                   <Linkedin size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
-              <a href="https://twitter.com/_moscode">
+              <a href="https://twitter.com/_moscode" title="Twitter">
                 <span className="icon p-2">
                   <Twitter size={'18'} color={'#fff'} fill={'#fff'} />
                 </span>
               </a>
-              <a href="mailto:enyinnayamoses60@gmail.com">
+              <a href="mailto:enyinnayamoses60@gmail.com" title="Email">
                 <span className="icon p-2">
                   <Mail size={'18'} color={'#fff'} />
                 </span>

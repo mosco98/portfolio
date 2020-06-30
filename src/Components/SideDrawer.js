@@ -19,7 +19,9 @@ const SideDrawer = ({ setOpen }) => {
           <span className={path === '/about' ? 'nav-item py-1 active' : 'nav-item py-1'}>About</span>
         </Link>
         <a
-          href="https://drive.google.com/file/d/1Btej8CUjWJvBtWq1-5L7F4P6Xa-L9kLz/view?usp=sharing"
+          href="https://drive.google.com/file/d/11M1SzqNoGVUbwA6PYXd9Pzi-zoIeYdF4/view?usp=sharing"
+          target="_blank"
+          rel="noopener noreferrer"
           className="nav-item"
           style={{ padding: '10px' }}>
           Resume

@@ -15,22 +15,22 @@ const Contact = () => {
       <div className="container" style={{ marginTop: '7rem', height: '50vh' }}>
         <h2 className="text-white p-2">CONTACT ME</h2>
         <div className="container h-50 d-flex align-items-center justify-content-center mt-6">
-          <a href="https://github.com/mosco98">
+          <a href="https://github.com/mosco98" title="Github">
             <span className="icon-contact p-3">
               <GitHub size={'23'} color={'#fff'} fill={'#fff'} />
             </span>
           </a>
-          <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197">
+          <a href="https://www.linkedin.com/in/moses-enyinnaya-142282197" title="LinkedIn">
             <span className="icon-contact p-3">
               <Linkedin size={'23'} color={'#fff'} fill={'#fff'} />
             </span>
           </a>
-          <a href="https://twitter.com/_moscode">
+          <a href="https://twitter.com/_moscode" title="Twitter">
             <span className="icon-contact p-3">
               <Twitter size={'23'} color={'#fff'} fill={'#fff'} />
             </span>
           </a>
-          <a href="mailto:enyinnayamoses60@gmail.com">
+          <a href="mailto:enyinnayamoses60@gmail.com" title="Email">
             <span className="icon-contact p-3">
               <Mail size={'23'} color={'#fff'} />
             </span>
