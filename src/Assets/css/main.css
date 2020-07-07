@@ -16,10 +16,12 @@ html {
 }
 
 .nav-bar-items {
-  width: 50%;
+  width: 400px;
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  background: #050505;
+  padding: 10px;
 }
 
 .menu-btn {
@@ -155,7 +157,7 @@ html {
 
 .header-ctn {
   height: 50%;
-  width: 50%;
+  width: 55%;
   margin-left: -50px;
   /* padding: 1rem; */
 }
@@ -166,7 +168,7 @@ html {
   left: 0;
   width: 500px;
   height: 500px;
-  opacity: 0.6;
+  opacity: 0.75;
 }
 
 .nav-item {

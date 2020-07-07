@@ -17,7 +17,7 @@ const Main = () => {
       <div className="w-100 d-flex align-items-center justify-content-end h-75">
         <img className="img-fluid bgImg p-0" src={hoodieFull} alt="header" />
         <div className="header-ctn">
-          <div className="details-ctn animated slideInRight">
+          <div className="details-ctn animated fadeIn">
             <h1 className="text-white name-home">Moses Enyinnaya</h1>
             <p className="description">
               I'm a passionate <span className="job-title">Software Developer</span> from Nigeria
